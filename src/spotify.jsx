@@ -1,5 +1,5 @@
 export const authEndpoint="https://accounts.spotify.com/authorize";
-const redirectURI="http://localhost:5173/"
+const redirectURI="https://spotify-echo.vercel.app/"
 const clientId=import.meta.env.VITE_CLIENT_ID;
 console.log(clientId)
 const scopes = [
