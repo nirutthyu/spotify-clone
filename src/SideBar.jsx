@@ -17,9 +17,9 @@ export default function SideBar() {
         <SideBarOption  title="Your Library" Icon={BiLibrary} />
         <strong>PLAYLISTS</strong>
 
-        {playlists?.items?.map(({ id, name, images }) => {
+        {playlists?.items?.map(({ id, name, images,owner }) => {
           return (
-            <SideBarOption id="playlistButton"key={id} id={id} title={name} src={images[0]?.url} />
+            <SideBarOption id="playlistButton"key={id} id={id} title={name} owner={owner.display_name}src={images[0]?.url} />
           );
         })}
       </div>

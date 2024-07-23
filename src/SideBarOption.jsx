@@ -1,7 +1,7 @@
 
 import { useDataLayerValue } from "./Datalayer";
 import SpotifyWebApi from "spotify-web-api-js";
-export default function SideBarOption({ id, title, Icon, src }) {
+export default function SideBarOption({ id, title, Icon, src,owner }) {
   const spotify = new SpotifyWebApi();
   const [{ user, playlists , tracks }, dispatch] = useDataLayerValue();
   function handleClick(id) {
@@ -59,7 +59,7 @@ export default function SideBarOption({ id, title, Icon, src }) {
             <div className="col  playlistAlbum justify-content-center" style={{fontSize:"1.1vw",marginLeft:"0"}} >
               <b className="row-5 playlistAlbum "  >{title}</b>
               <p className="row-5 playlistAlbum " style={{opacity: "0.7"}}>
-              Playlist • {user.display_name}
+              Playlist • {owner}
               </p>
             </div>
           </div>
