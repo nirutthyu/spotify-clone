@@ -10,4 +10,8 @@
 ### Dependencies installation
 - npm i spotify-web-api-js
 * npm i react-icons
-+ npm i colorthief 
++ npm i colorthief
+
+# Take a look here
+  [![Video Title](https://img.youtube.com/vi/7EvJDejZG3E/0.jpg)](https://www.youtube.com/watch?v=7EvJDejZG3E)
+
