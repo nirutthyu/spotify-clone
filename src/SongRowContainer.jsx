@@ -24,7 +24,7 @@ export default function SongRowContainer({ playing, setPlaying, audioRef }) {
               artist: x.track.artists,
               img: x.track.album.images.length > 0 ? x.track.album.images[0].url : "",
               date: x.added_at.substring(0, 10),
-              time: (x.track.duration_ms /6000).toFixed(2),
+              time: (x.track.duration_ms /60000).toFixed(2),
               uri: preview_uri,
             };
           } catch (error) {
